@@ -36,6 +36,15 @@ function TodoProvider({ children }) {
     saveTodos(newTodos);
   }
 
+  const addTodo = (text) => {
+    const newTodos = [...todos];
+    newTodos.push({
+      text: text,
+      completed: false
+    });
+    saveTodos(newTodos);
+  }
+
   const deleteTodo = (text) => {
     const newTodos = [...todos];
     const todoIndex = newTodos.findIndex(
@@ -54,6 +63,7 @@ function TodoProvider({ children }) {
         setSearchValue,
         searchedTodos,
         completeTodo,
+        addTodo,
         deleteTodo,
         loading,
         error,
