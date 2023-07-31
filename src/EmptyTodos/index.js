@@ -2,7 +2,7 @@ import React from "react";
 
 function EmptyTodos() {
   return (
-    <p>Empty...</p>
+    <p>Crea un nuevo TODO</p>
   )
 }
 

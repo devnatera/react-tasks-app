@@ -20,7 +20,7 @@ function useLocalStorage(
           parsedItem = JSON.parse(localStorageItem);
           setItem(parsedItem);
         }
-  
+
         setLoading(false);
       } catch (error) {
         setLoading(false);
@@ -43,3 +43,15 @@ function useLocalStorage(
 }
 
 export { useLocalStorage };
+
+// localStorage.removeItem('TODOS_V1');
+/* const defaultTodos = [
+  { text: 'Cortar cebolla', completed: true },
+  { text: 'Tomar el curso de introducción a React', completed: false },
+  { text: 'Llorar con la llorona', completed: false },
+  { text: 'Usar estados derivados', completed: true },
+  { text: 'LALALALALALA', completed: false },
+];
+
+localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
+ */

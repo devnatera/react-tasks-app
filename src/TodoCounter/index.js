@@ -1,10 +1,13 @@
 import React from 'react';
 import './TodoCounter.css';
+import { TodoContext } from '../TodoContext';
 
-function TodoCounter({
-  total,
-  completed,
-}) {
+function TodoCounter() {
+  const {
+    totalTodos: total,
+    completedTodos: completed
+  } = React.useContext(TodoContext);
+
   const message = (total, completed) => {
     let _message;
     switch (total) {
