@@ -1,7 +1,10 @@
 import React from 'react';
 import './TodoCounter.css';
 
-function TodoCounter({ total, completed }) {
+function TodoCounter({
+  total,
+  completed,
+}) {
   const message = (total, completed) => {
     let _message;
     switch (total) {
