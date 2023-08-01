@@ -32,7 +32,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://devnatera.github.io/react-tasks-app/buid/",
+  "homepage": "https://devnatera.github.io/react-tasks-app",
   "devDependencies": {
     "gh-pages": "^5.0.0"
   }
